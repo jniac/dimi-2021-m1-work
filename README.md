@@ -2,7 +2,9 @@
 
 Projet commun pour le rendu des exercices.
 
-[Page en ligne](https://jniac.github.io/dimi-m1-work-21-22/)
+[Liste des travaux](https://jniac.github.io/dimi-m1-work-21-22/)
+
+[Walkers](https://jniac.github.io/dimi-m1-work-21-22/works/walkers/)
 
 # Développer la solution en local
 Prérequis : 
