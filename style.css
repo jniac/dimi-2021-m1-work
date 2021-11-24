@@ -1,0 +1,32 @@
+@import url(works/common/style.css);
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  background-color: #aaa;
+  color: #222;
+}
+
+h1 {
+  margin-bottom: 32px;
+}
+
+ul {
+  --margin: 8px;
+}
+ul li {
+  display: flex;
+}
+ul li > * + * {
+  margin-left: var(--margin);
+  padding-left: var(--margin);
+  border-left: solid 1px #333;
+}
+
+a {
+  color: #04f;
+}
+a:visited {
+  color: #60f;
+}
