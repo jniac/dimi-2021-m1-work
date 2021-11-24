@@ -2,6 +2,8 @@
 
 Projet commun pour le rendu des exercices.
 
+[Page en ligne](https://jniac.github.io/dimi-m1-work-21-22/)
+
 # Développer la solution en local
 Prérequis : 
 - Une copie locale du projet, ouverte dans Visual Studio Code
