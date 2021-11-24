@@ -7,7 +7,7 @@ const UP = 3
 
 let x = 18
 let y = 18
-let orientation = turnRight
+let orientation = Right
 
 const moveForward = () => {
   if (orientation === LEFT) {
