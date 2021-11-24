@@ -27,9 +27,9 @@ const moveForward = () => {
 
 const getRandomColor = () => {
   if (Math.random() < 0.5) {
-    return 'turquoise'
+    return 'goldenrod'
   }
-  return 'yellow'
+  return 'red'
 }
 
 export const move = () => {
