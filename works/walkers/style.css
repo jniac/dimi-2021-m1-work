@@ -1,0 +1,37 @@
+@import url(../common/style.css);
+
+body {
+  height: 100vh;
+  padding: 64px;
+  overflow: hidden;
+}
+
+body > * {
+  overflow: hidden;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  margin: 32px;
+  align-self: stretch;
+  image-rendering: pixelated;
+  flex: 1;
+}
+
+canvas {
+  aspect-ratio: 2;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+footer > * + * {
+  margin-left: 8px;
+}
+footer button {
+  padding: 4px;
+}

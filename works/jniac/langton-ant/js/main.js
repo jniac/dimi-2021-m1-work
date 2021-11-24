@@ -1,7 +1,7 @@
 import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
 import * as drunken from './drunken-walker.js'
-import * as another from './another-drunken-walker.js'
+import * as myWalker from './my-walker.js'
 
 resizeCanvas(128, 128)
 
@@ -15,7 +15,7 @@ const update = () => {
   for (let i = 0; i < speed; i++) {
     ant.move()
     drunken.move()
-    another.move()
+    myWalker.move()
     frame += 1
   }
   document.querySelector('#frame').innerHTML = `#${frame.toString().padStart(5, '0')}@x${speed}`

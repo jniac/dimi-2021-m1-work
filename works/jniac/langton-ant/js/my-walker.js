@@ -6,7 +6,7 @@ const LEFT = 2
 const UP = 3
 
 const getRandomColor = () => {
-  if (Math.random() < 0.5) {
+  if (Math.random() < 0.25) {
     return 'transparent'
   }
   if (Math.random() < 0.5) {
@@ -19,6 +19,11 @@ let x = 20
 let y = 20
 let orientation = RIGHT
 let color = getRandomColor()
+
+const setPosition = (positionX, positionY) => {
+  x = positionX
+  y = positionY
+}
 
 const moveForward = () => {
   if (orientation === RIGHT) {
@@ -36,7 +41,7 @@ const moveForward = () => {
   y = p.y
 }
 
-export const move = () => {
+const move = () => {
   setPixel(x, y, color)
 
   const shouldChange = Math.random() < 0.1
@@ -46,4 +51,10 @@ export const move = () => {
   }
 
   moveForward()
+}
+
+export {
+  x, y,
+  setPosition,
+  move,
 }

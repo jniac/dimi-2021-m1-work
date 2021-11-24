@@ -3,6 +3,11 @@ import colors from './colors.js'
 export const canvas = document.querySelector('canvas')
 export const context = canvas.getContext('2d')
 
+/**
+ * 
+ * @param {number} width 
+ * @param {number} height 
+ */
 export const resizeCanvas = (width, height) => {
   canvas.width = width
   canvas.height = height
