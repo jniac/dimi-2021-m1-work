@@ -42,13 +42,13 @@ const move = () => {
   // Algorithme de la fourmi de langton :
   // Pour une couleur précise (ici le blanc "#ffffff") :
   //   tourner à gauche ("turnLeft()")
-  //   et peindre le pixel en un couleur sympa ("darkslateblue")
+  //   et peindre le pixel en un couleur sympa ("turquoise")
   // sinon :
   //   tourner à droite ("turnRight()")
   //   et remettre le pixel en blanc ("#ffffff")
   if (color === '#ffffff') {
     turnLeft()    
-    setPixel(x, y, 'darkslateblue')
+    setPixel(x, y, 'red')
   } else {
     turnRight()
     setPixel(x, y, '#ffffff')
