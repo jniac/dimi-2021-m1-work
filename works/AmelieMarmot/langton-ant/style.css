@@ -1,0 +1,26 @@
+@import url(../../common/style.css);
+
+body {
+  padding: 64px;
+}
+
+header {
+  text-align: center;
+}
+
+canvas {
+  flex: 1;
+  margin: 32px;
+  image-rendering: pixelated;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+}
+footer > * + * {
+  margin-left: 8px;
+}
+footer button {
+  padding: 4px;
+}
