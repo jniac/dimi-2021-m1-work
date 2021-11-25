@@ -1,11 +1,9 @@
 import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
-import * as drinker from './drinker.js'
 
 resizeCanvas(128, 128)
 
 ant.setPosition(128 / 2, 128 / 2)
-drinker.setRandomPosition()
 
 let paused = true
 let speed = 1
@@ -14,7 +12,6 @@ let frame = 0
 const update = () => {
   for (let i = 0; i < speed; i++) {
     ant.move()
-    drinker.move()
     frame += 1
   }
   document.querySelector('#frame').innerHTML = `#${frame.toString().padStart(5, '0')}@x${speed}`
