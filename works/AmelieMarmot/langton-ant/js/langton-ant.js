@@ -39,7 +39,7 @@ const move = () => {
   
   const color = getPixel(x, y)
 
-  // Algorithme de la fourmi de langton :
+   // Algorithme de la fourmi de langton :
   // Pour une couleur précise (ici le blanc "#ffffff") :
   //   tourner à gauche ("turnLeft()")
   //   et peindre le pixel en un couleur sympa ("darkslateblue")
