@@ -1,5 +1,4 @@
 @import url(../../common/style.css);
-@import url(https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=block);
 
 body {
   padding: 64px;
@@ -24,7 +23,4 @@ footer > * + * {
 }
 footer button {
   padding: 4px;
-}
-footer {
-  font-family: 'Fira Code', monospace;
 }
