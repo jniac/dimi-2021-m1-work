@@ -9,6 +9,8 @@ let paused = false
 let speed = 1
 let frame = 0
 
+walkers.initPosition()
+
 const loopUpdate = () => {
   for (let i = 0; i < speed; i++) {
     walkers.update()

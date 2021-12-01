@@ -1,9 +1,11 @@
 import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
+import * as druken from './drunken-walker.js'
 
 resizeCanvas(128, 128)
 
 ant.setPosition(128 / 2, 128 / 2)
+druken.setPosition(128 / 2, 128 / 2)
 
 let paused = true
 let speed = 1
@@ -12,6 +14,7 @@ let frame = 0
 const update = () => {
   for (let i = 0; i < speed; i++) {
     ant.move()
+    druken.move()
     frame += 1
   }
   document.querySelector('#frame').innerHTML = `#${frame.toString().padStart(5, '0')}@x${speed}`
@@ -38,5 +41,4 @@ document.querySelector('#speed').oninput = () => {
   speed = value
 }
 
-// intialiser la boucle d'animation par un premier appel
 loop()
