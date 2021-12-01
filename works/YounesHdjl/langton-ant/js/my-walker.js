@@ -5,15 +5,14 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-let colorIndex = 0
 const getRandomColor = () => {
-  const colors = ['ffd700','ff8000']
-  const color = colors[colorIndex]
-  colorIndex = colorIndex + 1
-  if (colorIndex >= colors.length) {
-    colorIndex = 0
+  if (Math.random() < 0.25) {
+    return 'transparent'
   }
-  return color
+  if (Math.random() < 0.5) {
+    return 'purple'
+  }
+  return 'mediumpurple'
 }
 
 let x = 20

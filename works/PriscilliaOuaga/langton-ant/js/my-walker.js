@@ -7,7 +7,7 @@ const UP = 3
 
 let colorIndex = 0
 const getColor = () => {
-  const colors = ['pink', 'mistyrose', 'darkslateblue']
+  const colors = ['pink', 'yellow', 'grey']
     const color = colors[colorIndex]
     colorIndex = colorIndex + 1
     if (colorIndex >= colors.lenght) {
