@@ -1,0 +1,46 @@
+body, body * {
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  --tile-size: 120px;
+  --grid-col: 4;
+  --grid-row: 3;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  background-color:burlywood;
+  min-height: 100vh;
+}
+
+main#grid {
+  width: calc(var(--grid-col) * var(--tile-size));
+  height: calc(var(--grid-row) * var(--tile-size));
+  border: solid wheat 8px;
+  box-sizing: content-box;
+}
+
+div.tile {
+  position: absolute;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  background-color: white;
+}
+div.tile-content {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  background-color: white;
+}
+
+div#library {
+  position: absolute;
+  /* z-index: forcer la div à s'afficher au premier plan */
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
