@@ -4,8 +4,8 @@
 
 .tile-content.type1 .layer1 {
   background-color: rgb(106, 90, 205);
-  mask-image: url(../assets/chèvre.svg);
-  -webkit-mask-image: url(../assets/chèvre.svg);
+  mask-image: url(../assets/4-squares.svg);
+  -webkit-mask-image: url(../assets/4-squares.svg);
 }
 
 .tile-content.type1 .layer2 {
