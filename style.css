@@ -12,6 +12,10 @@ h1 {
   margin-bottom: 32px;
 }
 
+p {
+  margin-bottom: 16px;
+}
+
 ul {
   --margin: 8px;
 }
