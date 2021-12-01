@@ -39,7 +39,7 @@ const move = () => {
   
   const color = getPixel(x, y)
 
-  if (color === '#b8eod2') {
+  if (color === '#809bce') {
     turnLeft()    
     setPixel(x, y, '#00008b')
   } else {
