@@ -42,7 +42,7 @@ const turnLeft = () => {
 
 const move = () => {
   
-  setPixel(x, y, 'E0DE98')
+  setPixel(x, y, '#E3E19B')
 
   orientation = Math.floor(Math.random() * 4)
   moveForward()
