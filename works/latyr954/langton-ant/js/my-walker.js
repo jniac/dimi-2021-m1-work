@@ -5,9 +5,10 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
+// solution pour un cycle de couleur :
 let colorIndex = 0
-const getRandomColor = () => {
-  const colors = ["00561B","#006400"]
+const getColor = () => {
+  const colors = ['green', 'green', 'green']
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
@@ -19,7 +20,7 @@ const getRandomColor = () => {
 let x = 20
 let y = 20
 let orientation = RIGHT
-let color = getRandomColor()
+let color = getColor()
 
 const setPosition = (positionX, positionY) => {
   x = positionX
@@ -44,10 +45,10 @@ const moveForward = () => {
 
 const move = () => {
   setPixel(x, y, color)
+  color = getColor()
 
   const shouldChange = Math.random() < 0.1
   if (shouldChange) {
-    color = getRandomColor()
     orientation = Math.floor(Math.random() * 4)
   }
 
