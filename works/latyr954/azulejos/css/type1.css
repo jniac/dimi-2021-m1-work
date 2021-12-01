@@ -3,7 +3,7 @@
 }
 
 .tile-content.type1 .layer1 {
-    background-color: rgb(15, 137, 236);
+    background-color: rgb(232, 236, 15);
     mask-image: url(../assets/star-8.svg);
     -webkit-mask-image: url(../assets/star-8.svg);
 }
