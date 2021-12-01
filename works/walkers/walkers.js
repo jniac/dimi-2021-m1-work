@@ -5,6 +5,7 @@ import * as maelcmpWalker from '../MaelCmp/langton-ant/js/my-walker.js'
 import * as amelieWalker from '../AmelieMarmot/langton-ant/js/my-walker.js'
 import * as ludivineWalker from '../ludivinedourd/langton-ant/js/my-walker.js'
 import * as mariemarteilWalker from '../mariemarteil/langton-ant/js/my-walker.js'
+import * as sarahWalker from'../SarahBenAyad/langton-ant/js/mywalker.js'
 
 export const allWalkers = [
   jniacWalker,
