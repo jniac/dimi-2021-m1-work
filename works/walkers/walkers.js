@@ -6,7 +6,8 @@ import * as maelcmpWalker from '../MaelCmp/langton-ant/js/my-walker.js'
 export const allWalkers = [
   jniacWalker,
   mariaWalker,
-  maelcmpWalker
+  maelcmpWalker,
+  amelieWalker,
 ]
 
 export const initPosition = () => {
