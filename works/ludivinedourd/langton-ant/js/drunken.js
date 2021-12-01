@@ -39,12 +39,12 @@ const move = () => {
   
   const color = getPixel(x, y)
 
-  if (color === '#ffffff') {
+  if (color === '#809bce') {
     turnLeft()    
     setPixel(x, y, '#b8e0d2')
   } else {
     turnRight()
-    setPixel(x, y, '#ffffff')
+    setPixel(x, y, '#95b8d1')
   }
   
   moveForward()
