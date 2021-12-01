@@ -3,9 +3,9 @@ const getRandomColor = () => {
   const r = Math.random()
   if (r < 0.5) {
     if (Math.random() < 0.5) {
-      return '#2351AA'
+      return '#61B5F2'//bleu clair
     }
-    return '#7FE597'
+    return '#ffffff'//vert clair
   }
   if (r < 0.7) {
     return '#101884'
@@ -13,7 +13,7 @@ const getRandomColor = () => {
   if (r < 0.9) {
     return '#23AA51'
   }
-  return '#FFD033'
+  return '#FFD033'//jaune
 }
 
 const createType1 = () => {
