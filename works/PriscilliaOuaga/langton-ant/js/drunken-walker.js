@@ -29,7 +29,7 @@ const getRandomColor = () => {
   if (Math.random() < 0.5) {
     return 'goldenrod'
   }
-  return 'red'
+  return 'blue'
 }
 
 export const move = () => {
