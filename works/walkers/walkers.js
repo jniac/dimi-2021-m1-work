@@ -7,6 +7,7 @@ import * as ludivineWalker from '../ludivinedourd/langton-ant/js/my-walker.js'
 import * as mariemarteilWalker from '../mariemarteil/langton-ant/js/my-walker.js'
 import * as sarahWalker from'../SarahBenAyad/langton-ant/js/mywalker.js'
 import * as priscilliaWalker from'../PriscilliaOuaga/langton-ant/js/my-walker.js'
+import * as priscilliaWalker from '../PriscilliaOuaga/langton-ant/js/my-walker.js'
 
 
 export const allWalkers = [
@@ -16,6 +17,7 @@ export const allWalkers = [
   amelieWalker,
   ludivineWalker,
   mariemarteilWalker,
+  priscilliaWalker,
 ]
 
 export const initPosition = () => {
