@@ -9,10 +9,11 @@ let x = 20
 let y = 20
 let orientation = RIGHT
 
-const setRandomPosition = () => {
-  x = Math.floor(Math.random() * canvas.width)
-  y = Math.floor(Math.random() * canvas.height)
+const setRandonmPosition = ()=>{
+  x = Math.floor(Math.random()*canvas.width)
+  y = Math.floor(Math.random()*canvas.height)
 }
+
 const moveForward = () => {
   if (orientation === RIGHT) {
     x = x + 1
@@ -52,7 +53,7 @@ const move = () => {
   //   et remettre le pixel en blanc ("#ffffff")
   if (color === '#ffffff') {
     turnLeft()    
-    setPixel(x, y, 'gold')
+    setPixel(x, y, 'turquoise')
   } else {
     turnRight()
     setPixel(x, y, '#ffffff')
@@ -71,7 +72,8 @@ export {
   y,
   orientation,
   move,
-  setRandomPosition,
   setPosition,
+  setRandonmPosition,
+
 }
 
