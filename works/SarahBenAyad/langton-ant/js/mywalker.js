@@ -7,12 +7,12 @@ const UP = 3
 
 const getRandomColor = () => {
   if (Math.random() < 0.25) {
-    return 'transparent'
+    return 'pink'
   }
   if (Math.random() < 0.5) {
-    return 'purple'
+    return 'pink'
   }
-  return 'mediumpurple'
+  return 'pink'
 }
 
 let x = 20
