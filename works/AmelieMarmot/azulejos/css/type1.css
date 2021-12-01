@@ -4,19 +4,19 @@
 
 .tile-content.type1 .layer1 {
   background-color: rgb(106, 90, 205);
-  mask-image: url(../assets/ancre.svg);
-  -webkit-mask-image: url(../assets/ancre.svg);
+  mask-image: url(../assets/4-squares.svg);
+  -webkit-mask-image: url(../assets/4-squares.svg);
 }
 
 .tile-content.type1 .layer2 {
   background-color: rgb(75,0,130);
-  mask-image: url(../assets/fleur.svg);
-  -webkit-mask-image: url(../assets/fleur.svg);
+  mask-image: url(../assets/star-8-stroke.svg);
+  -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
 
 .tile-content.type1 .layer3 {
   background-color: rgb(230, 230, 250);
-  mask-image: url(../assets/feuille.svg);
-  -webkit-mask-image: url(../assets/feuille.svg);
+  mask-image: url(../assets/star-8.svg);
+  -webkit-mask-image: url(../assets/star-8.svg);
   transform: scale(.5);
 }
