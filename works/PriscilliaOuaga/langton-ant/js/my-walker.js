@@ -15,15 +15,6 @@ const getColor = () => {
     }
   return color 
 }
-const getColor = () => {
-  if (Math.random() < 0.25) {
-    return 'transparent'
-  }
-  if (Math.random() < 0.5) {
-    return '#8B0000'
-  }
-  return '#B22222'
-}
 
 let x = 20
 let y = 20
