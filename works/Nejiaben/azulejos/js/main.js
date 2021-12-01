@@ -4,7 +4,7 @@ const getRandomColor = () => {
     if (Math.random() < 0.5) {
       return '#b92e15'
     }
-    return 'tomato'
+    return 'yellow'
   }
   if (r < 0.7) {
     return '#df5eef'
