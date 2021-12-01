@@ -1,4 +1,5 @@
 import { clampPosition, setPixel } from '../../../common/canvas.js'
+import * as ant from './langton-ant.js'
 
 const RIGHT = 0
 const BOTTOM = 1
