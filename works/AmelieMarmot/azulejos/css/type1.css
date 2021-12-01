@@ -16,7 +16,7 @@
 
 .tile-content.type1 .layer3 {
   background-color: rgb(230, 230, 250);
-  mask-image: url(../assets/star-8.svg);
-  -webkit-mask-image: url(../assets/star-8.svg);
+  mask-image: url(../assets/chèvre.svg);
+  -webkit-mask-image: url(../assets/chèvre.svg);
   transform: scale(.5);
 }
