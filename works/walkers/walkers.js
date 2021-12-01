@@ -8,7 +8,6 @@ import * as mariemarteilWalker from '../mariemarteil/langton-ant/js/my-walker.js
 import * as sarahWalker from'../SarahBenAyad/langton-ant/js/mywalker.js'
 import * as priscilliaWalker from '../PriscilliaOuaga/langton-ant/js/my-walker.js'
 
-
 export const allWalkers = [
   jniacWalker,
   mariaWalker,
