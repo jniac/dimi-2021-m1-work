@@ -20,6 +20,15 @@ body {
   min-height: 100vh;
 }
 
+h1{
+  color: black;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
 main#grid {
   width: calc(var(--grid-col) * var(--tile-size));
   height: calc(var(--grid-row) * var(--tile-size));
