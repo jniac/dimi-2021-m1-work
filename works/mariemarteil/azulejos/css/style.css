@@ -39,10 +39,7 @@ div.tile-content {
   background-color: white;
 }
 
-/* tous les enfants de "tite-content", càd les calques... */
 div.tile-content > * {
-  /* ...doivent se comporter comme des calques dans photoshop ou illustrator */
-  /* c'est à dire, qu'ils doivent faire la même taille que leur parent et se superposer les uns sur les autres. */
   position: absolute;
   top: 0;
   left: 0;
@@ -52,7 +49,6 @@ div.tile-content > * {
 
 div#library {
   position: absolute;
-  /* z-index: forcer la div à s'afficher au premier plan */
   z-index: 1;
   top: 0;
   left: 0;

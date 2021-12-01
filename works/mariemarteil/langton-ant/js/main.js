@@ -2,6 +2,7 @@ import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
 import * as druken from './drunken-walker.js'
 
+
 resizeCanvas(128, 128)
 
 ant.setPosition(128 / 2, 128 / 2)

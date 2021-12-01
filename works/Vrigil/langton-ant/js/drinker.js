@@ -1,4 +1,4 @@
-import { canvas, getPixel, setPixel } from '../../../common/canvas.js'
+import { canvas, clampPosition, getPixel, setPixel } from '../../../common/canvas.js'
 
 const RIGHT = 0
 const BOTTOM = 1
@@ -8,6 +8,19 @@ const UP = 3
 let x = 20
 let y = 20
 let orientation = RIGHT
+
+let colorIndex = 0
+const getColor = () => {
+  const colors = ['#3484DB', '#E57ABD', '#DEDEDE','#E57ABD','#3484DB']
+  const color = colors[colorIndex]
+  colorIndex = colorIndex + 1
+  if (colorIndex >= colors.length) {
+    colorIndex = 0
+  }
+  return color
+}
+
+
 
 const setRandomPosition = () => {
   x = Math.floor(Math.random() * canvas.width)
@@ -25,40 +38,16 @@ const moveForward = () => {
   }
 }
 
-const turnRight = () => {
-  orientation = orientation + 1
-  if (orientation === 4) {
-    orientation = 0
-  }
-}
-
-const turnLeft = () => {
-  orientation = orientation - 1
-  if (orientation === -1) {
-    orientation = 3
-  }
-}
 
 const move = () => {
   
-  const color = getPixel(x, y)
-
-  // Algorithme de la fourmi de langton :
-  // Pour une couleur précise (ici le blanc "#ffffff") :
-  //   tourner à gauche ("turnLeft()")
-  //   et peindre le pixel en un couleur sympa ("turquoise")
-  // sinon :
-  //   tourner à droite ("turnRight()")
-  //   et remettre le pixel en blanc ("#ffffff")
-  if (color === '#ffffff') {
-    turnLeft()    
-    setPixel(x, y, 'gold')
-  } else {
-    turnRight()
-    setPixel(x, y, '#ffffff')
-  }
-  
+  const color = getColor()
+  setPixel(x, y, color)
+  orientation = Math.floor(Math.random() * 4)
   moveForward()
+  const p = clampPosition(x, y)
+  x = p.x
+  y = p.y
 }
 
 const setPosition = (positionX, positionY) => {
