@@ -5,6 +5,7 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
+let colorIndex = 0
 const getRandomColor = () => {
   const colors = ['ffd700','ff8000']
   const color = colors[colorIndex]
