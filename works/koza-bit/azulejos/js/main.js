@@ -3,17 +3,17 @@ const getRandomColor = () => {
   const r = Math.random()
   if (r < 0.5) {
     if (Math.random() < 0.5) {
-      return '#b92e15'
+      return '#4A748A'
     }
-    return 'tomato'
+    return '#CA675A'
   }
   if (r < 0.7) {
-    return '#df5eef'
+    return '#82B9D6'
   }
   if (r < 0.9) {
-    return '#06069f'
+    return '#ECD076'
   }
-  return '#5bacff'
+  return '#EBC578'
 }
 
 const createType1 = () => {
