@@ -51,7 +51,7 @@ const move = () => {
     setPixel(x, y, '#98fb98')
   } else {
     turnRight()
-    setPixel(x, y, '#ffacd')
+    setPixel(x, y, '#191970')
   }
   
   moveForward()
