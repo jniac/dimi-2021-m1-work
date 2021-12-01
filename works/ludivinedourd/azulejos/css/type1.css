@@ -1,11 +1,11 @@
-.tile-content.type1 {
-  background-color: #ccc;
+.tilecontent.type1 {
+  background-color: tomato;
 }
 
-.tile-content.type1 .layer1 {
-  background-color: black;
+.tilecontent.type1 .layer1{
+  background-color: black ;
   mask-image: url(../assets/star-8.svg);
-  -webkit-mask-image: url(../assets/star-8.svg);
+  -webkit-mask-image: url(../assets/star-8.svg)
 }
 
 .tile-content.type1 .layer2 {

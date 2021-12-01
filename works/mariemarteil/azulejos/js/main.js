@@ -1,19 +1,18 @@
-
 const getRandomColor = () => {
   const r = Math.random()
   if (r < 0.5) {
     if (Math.random() < 0.5) {
-      return '#b31b1b'
+      return '#b92e15'
     }
-    return '#592720'
+    return '#6c9a8b'
   }
   if (r < 0.7) {
-    return '#ff0038'
+    return '#e8998d'
   }
   if (r < 0.9) {
-    return '#de3163'
+    return '#eed2cc'
   }
-  return '#dc143c'
+  return '#fbf7f4'
 }
 
 const createType1 = () => {
@@ -47,4 +46,3 @@ const createGrid = (col, row) => {
 }
 
 createGrid(4, 3)
-
