@@ -46,7 +46,7 @@ const move = () => {
   // sinon :
   //   tourner à droite ("turnRight()")
   //   et remettre le pixel en blanc ("#ffffff")
-  if (color === '#191970') {
+  if (color === '#b8e0d2') {
     turnLeft()    
     setPixel(x, y, 'darkslateblue')
   } else {
