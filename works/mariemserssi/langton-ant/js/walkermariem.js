@@ -17,7 +17,7 @@ const getRandomColor = () => {
 let x = 20
 let y = 20
 let orientation = RIGHT
-let color = getColor()
+let color = getRandomColor()
 
 const setPosition = (positionX, positionY) => {
   x = positionX
@@ -42,7 +42,7 @@ const moveForward = () => {
 
 const move = () => {
   setPixel(x, y, color)
-  color = getColor()
+  color = getRandomColor()
 
   const shouldChange = Math.random() < 0.1
   if (shouldChange) {
