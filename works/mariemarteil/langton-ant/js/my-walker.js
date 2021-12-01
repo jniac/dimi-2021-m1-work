@@ -5,9 +5,26 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
+let colorIndex = 0
+const getColor = () => {
+  const colors = ['#b92e15', '#6c9a8b', '#e8998d']
+  const color = colors[colorIndex]
+  colorIndex = colorIndex + 1
+  if (colorIndex >= colors.length) {
+    colorIndex = 0
+  }
+  return color
+}
+
 let x = 20
 let y = 20
 let orientation = RIGHT
+let color = getColor()
+
+const setPosition = (positionX, positionY) => {
+  x = positionX
+  y = positionY
+}
 
 const moveForward = () => {
   if (orientation === RIGHT) {
@@ -25,21 +42,15 @@ const moveForward = () => {
   y = p.y
 }
 
-const setPosition = (positionX, positionY) => {
-  x = positionX
-  y = positionY
-}
-
-const getRandomColor = () => {
-  if (Math.random() < 0.5) {
-    return '#b92e15'
-  }
-  return '#6c9a8b'
-}
-
 const move = () => {
-  setPixel(x, y, getRandomColor())
-  orientation = Math.floor(Math.random() * 4)
+  setPixel(x, y, color)
+  color = getColor()
+
+  const shouldChange = Math.random() < 0.1
+  if (shouldChange) {
+    orientation = Math.floor(Math.random() * 4)
+  }
+
   moveForward()
 }
 
