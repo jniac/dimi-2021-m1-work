@@ -25,26 +25,15 @@ const moveForward = () => {
   y = p.y
 }
 
-const setPosition = (positionX, positionY) => {
-  x = positionX
-  y = positionY
-}
-
 const getRandomColor = () => {
   if (Math.random() < 0.5) {
-    return '#b92e15'
+    return 'goldenrod'
   }
-  return '#6c9a8b'
+  return 'red'
 }
 
-const move = () => {
+export const move = () => {
   setPixel(x, y, getRandomColor())
   orientation = Math.floor(Math.random() * 4)
   moveForward()
-}
-
-export {
-  x, y,
-  setPosition,
-  move,
 }

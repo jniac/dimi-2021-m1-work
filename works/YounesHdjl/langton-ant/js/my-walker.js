@@ -1,24 +1,27 @@
 import { clampPosition, setPixel } from '../../../common/canvas.js'
 
+
 const RIGHT = 0
 const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-const getRandomColor = () => {
-  if (Math.random() < 0.25) {
-    return 'transparent'
+// solution pour un cycle de couleur :
+let colorIndex = 0
+const getColor = () => {
+  const colors = ['#FF7054', '#8658E8', '#65FFE4']
+  const color = colors[colorIndex]
+  colorIndex = colorIndex + 1
+  if (colorIndex >= colors.length) {
+    colorIndex = 0
   }
-  if (Math.random() < 0.5) {
-    return '#800000'
-  }
-  return '#2F4F4F'
+  return color
 }
 
 let x = 20
 let y = 20
 let orientation = RIGHT
-let color = getRandomColor()
+let color = getColor()
 
 const setPosition = (positionX, positionY) => {
   x = positionX
@@ -43,10 +46,10 @@ const moveForward = () => {
 
 const move = () => {
   setPixel(x, y, color)
+  color = getColor()
 
   const shouldChange = Math.random() < 0.1
   if (shouldChange) {
-    color = getRandomColor()
     orientation = Math.floor(Math.random() * 4)
   }
 
