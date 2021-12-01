@@ -16,6 +16,7 @@ export const allWalkers = [
   ludivineWalker,
   mariemarteilWalker,
   priscilliaWalker,
+  sarahWalker,
 ]
 
 export const initPosition = () => {
