@@ -7,7 +7,7 @@ body, body * {
 }
 
 body {
-    background-color: #eee;
+    background-color: rgb(44, 202, 65);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,7 @@ html {
 }
 
 main#grid {
-    border: solid 3px #222;
+    border: solid 3px rgb(230, 223, 223);
     width: calc(var(--grid-col) * var(--tile-size));
     height: calc(var(--grid-row) * var(--tile-size));
     box-sizing: content-box;
@@ -36,7 +36,7 @@ div.tile {
 div.tile-content {
     width: var(--tile-size);
     height: var(--tile-size);
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
 
 div.tile-content > * {
