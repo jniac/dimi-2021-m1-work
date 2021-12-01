@@ -5,6 +5,7 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
+// solution pour un cycle de couleur :
 let colorIndex = 0
 const getColor = () => {
   const colors = ['red', 'yellow', 'blue']

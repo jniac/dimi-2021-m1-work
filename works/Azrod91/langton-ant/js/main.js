@@ -7,7 +7,6 @@ resizeCanvas(128, 128)
 ant.setPosition(128 / 2, 128 / 2)
 drinker.setRandonmPosition()
 
-
 let paused = true
 let speed = 1
 let frame = 0
