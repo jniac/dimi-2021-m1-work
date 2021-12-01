@@ -6,7 +6,7 @@ const LEFT = 2
 const UP = 3
 
 const getColor = () => {
-  const colors = ['dimgray', 'blue', "darkslategray"]
+  const colors = ['dimgray', 'blue', 'darkslategray']
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
