@@ -5,14 +5,15 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-const getRandomColor = () => {
-  if (Math.random() < 0.25) {
-    return 'transparent'
+let colorIndex = 0
+const getColor = () => {
+  const colors = ['#000', '#333', '#666','#999','#bbb','#eee', '#fff']
+  const color = colors[colorIndex]
+  colorIndex = colorIndex + 1
+  if (colorIndex >= colors.length) {
+    colorIndex = 0
   }
-  if (Math.random() < 0.5) {
-    return 'purple'
-  }
-  return 'mediumpurple'
+  return color
 }
 
 let x = 20
