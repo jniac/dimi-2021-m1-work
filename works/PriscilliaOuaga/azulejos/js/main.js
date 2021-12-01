@@ -3,17 +3,17 @@ const getRandomColor = () => {
   const r = Math.random()
   if (r < 0.5) {
     if (Math.random() < 0.5) {
-      return '#61B5F2'//bleu clair
+      return '#D8BFD8'//chardon//
     }
-    return '#ffffff'//vert clair
+    return '#6A5ACD'//bleu ardoise//
   }
   if (r < 0.7) {
-    return '#101884'
+    return '#E6E6FA'//lavande//
   }
   if (r < 0.9) {
-    return '#23AA51'
+    return '#4B0082'//indingo//
   }
-  return '#FFD033'//jaune
+  return '#9370DB'//moyen violet//
 }
 
 const createType1 = () => {
@@ -47,4 +47,3 @@ const createGrid = (col, row) => {
 }
 
 createGrid(4, 3)
-
