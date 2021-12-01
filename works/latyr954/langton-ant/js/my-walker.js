@@ -7,7 +7,7 @@ const UP = 3
 
 let colorIndex = 0
 const getRandomColor = () => {
-  const colors = ["#008000","255"]
+  const colors = ["00561B","#006400"]
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
