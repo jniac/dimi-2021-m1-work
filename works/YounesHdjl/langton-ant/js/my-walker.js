@@ -10,9 +10,9 @@ const getRandomColor = () => {
     return 'transparent'
   }
   if (Math.random() < 0.5) {
-    return 'purple'
+    return '#F59717'
   }
-  return 'mediumpurple'
+  return '#51F5BA'
 }
 
 let x = 20
