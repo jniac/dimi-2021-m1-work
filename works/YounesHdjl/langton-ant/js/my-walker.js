@@ -1,5 +1,6 @@
 import { clampPosition, setPixel } from '../../../common/canvas.js'
 
+
 const RIGHT = 0
 const BOTTOM = 1
 const LEFT = 2

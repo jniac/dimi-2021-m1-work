@@ -1,6 +1,7 @@
 import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
 import * as myWalker from './my-walker.js'
+import * as ant from './langton-ant.js'
 
 resizeCanvas(128, 128)
 

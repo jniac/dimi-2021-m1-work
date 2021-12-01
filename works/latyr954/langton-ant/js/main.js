@@ -1,6 +1,7 @@
 import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
 
+
 resizeCanvas(128, 128)
 
 ant.setPosition(128 / 2, 128 / 2)

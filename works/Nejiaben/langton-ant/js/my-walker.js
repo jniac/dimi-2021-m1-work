@@ -8,7 +8,7 @@ const UP = 3
 // solution pour un cycle de couleur :
 let colorIndex = 0
 const getColor = () => {
-  const colors = ['#E492BA', '#867AEA', '#E9BA7C']
+  const colors = ['black', 'white']
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
@@ -17,8 +17,8 @@ const getColor = () => {
   return color
 }
 
-let x = 30
-let y = 30
+let x = 20
+let y = 20
 let orientation = RIGHT
 let color = getColor()
 

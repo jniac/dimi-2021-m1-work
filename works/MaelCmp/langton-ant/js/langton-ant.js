@@ -46,12 +46,12 @@ const move = () => {
   // sinon :
   //   tourner à droite ("turnRight()")
   //   et remettre le pixel en blanc ("#ffffff")
-  if (color === '#000000') {
+  if (color === '#ffff00') {
     turnLeft()    
-    setPixel(x, y, 'red')
+    setPixel(x, y, 'blue')
   } else {
     turnRight()
-    setPixel(x, y, '#000000')
+    setPixel(x, y, '#ffff00')
   }
   
   moveForward()
