@@ -1,9 +1,9 @@
 .tile-content.type1 {
-    background-color: #00d56a;
+    background-color: #f3ef0e;
 }
 
 .tile-content.type1 .layer1 {
-    background-color: #111;
+    background-color: rgb(37, 236, 10);
     mask-image: url(../assets/star-8.svg);
     -webkit-mask-image: url(../assets/star-8.svg);
 }
@@ -16,7 +16,7 @@
 }
 
 .tile-content.type1 .layer3 {
-    background-color: rgb(46, 218, 132);
+    background-color: rgb(240, 236, 10);
     mask-image: url(../assets/star-8-stroke.svg);
     -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
