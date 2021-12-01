@@ -1,8 +1,10 @@
 import { canvas } from '../common/canvas.js'
 import * as jniacWalker from '../jniac/langton-ant/js/my-walker.js'
+import * as walkermariem from '../mariemserssi/langton-ant/js/walkermariem.js'
 
 export const allWalkers = [
   jniacWalker,
+  walkermariem,
 ]
 
 for (const walker of allWalkers) {
