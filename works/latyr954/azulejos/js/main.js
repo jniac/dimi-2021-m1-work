@@ -1,5 +1,5 @@
 const getRandomColor = () => {
-    let tab = ['#003d69','#006dd5','#ff4849','#ffd03a','#f8ffb0']
+    let tab = ['#003d69','##FFFFFF','#008000','#000000','FFFF00']
     const randomColor = tab[Math.floor(Math.random() * tab.length)];
     return randomColor
 }
