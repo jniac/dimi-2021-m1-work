@@ -10,7 +10,7 @@ header { color: white;  ;
 }
 
 canvas { color: white;
-  flex: 1;
+  flex: 20px;
   margin: 50px;
   image-rendering: pixelated;
 }
