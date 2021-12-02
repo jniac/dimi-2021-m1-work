@@ -13,6 +13,7 @@ canvas { color: white;
   flex: 20px;
   margin: 50px;
   image-rendering: pixelated;
+  margin-top: auto color violet;
 }
 
 footer { color: white;
