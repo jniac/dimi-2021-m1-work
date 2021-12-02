@@ -11,7 +11,7 @@ header { color: white;  ;
 
 canvas { color: white;
   flex: 1;
-  margin: 32px;
+  margin: 50px;
   image-rendering: pixelated;
 }
 
