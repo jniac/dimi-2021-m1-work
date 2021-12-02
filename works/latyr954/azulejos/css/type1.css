@@ -3,20 +3,20 @@
 }
 
 .tile-content.type1 .layer1 {
-    background-color: #111;
+    background-color: rgb(247, 243, 243);
     mask-image: url(../assets/star-8.svg);
     -webkit-mask-image: url(../assets/star-8.svg);
 }
 
 .tile-content.type1 .layer2 {
-    background-color: #ddd;
+    background-color: rgb(247, 15, 15);
     mask-image: url(../assets/4-squares.svg);
     -webkit-mask-image: url(../assets/4-squares.svg);
     transform: scale(50%);
 }
 
 .tile-content.type1 .layer3 {
-    background-color: #777;
+    background-color: rgb(245, 243, 243);
     mask-image: url(../assets/star-8-stroke.svg);
     -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
