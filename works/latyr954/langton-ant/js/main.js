@@ -44,30 +44,3 @@ document.querySelector('#speed').oninput = () => {
 
 // intialiser la boucle d'animation par un premier appel
 loop()
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <title>Test Javascript</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-</head>
-
-<body>
-
-    <div id="x"></div>
-
-    <script>
-
-    var img = document.createElement("img");
-    img.src = "matplotlib-grid-02.png";
-
-    var div = document.getElementById("x");
-    div.appendChild(img);
-    //block.setAttribute("style", "text-align:center");
-
-    </script>
-
-</body>
-</html>
