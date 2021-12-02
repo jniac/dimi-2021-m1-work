@@ -5,8 +5,8 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-let x = 20
-let y = 20
+let x = 64
+let y = 64
 let orientation = RIGHT
 
 const moveForward = () => {
@@ -27,9 +27,9 @@ const moveForward = () => {
 
 const getRandomColor = () => {
   if (Math.random() < 0.5) {
-    return '#ff00ee'
+    return '#ff8000'
   }
-  return '#11dd11'
+  return '#359030'
 }
 
 export const move = () => {

@@ -7,7 +7,10 @@ const UP = 3
 
 let colorIndex = 0
 const getRandomColor = () => {
-  const colors = ['#000','red','#666']
+  const colors = ['#c80000','#c80090','#c200c8',
+                  '#8200c8','#4c00c8','#005ec8',
+                  '#00bfc8','#00c889','#00c815',
+                  '#86c800','#c2c800','#c87c00']
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
@@ -16,8 +19,8 @@ const getRandomColor = () => {
   return color
 }
 
-let x = 20
-let y = 20
+let x = 192
+let y = 64
 let orientation = RIGHT
 let color = getRandomColor()
 
