@@ -5,23 +5,23 @@ body {
   padding: 40px;
 }
 
-header {
+header { color: white;
   text-align: center;
 }
 
-canvas {
+canvas { color: white;
   flex: 1;
   margin: 32px;
   image-rendering: pixelated;
 }
 
-footer {
+footer { color: white;
   display: flex;
   align-items: center;
 }
-footer > * + * {
+footer > * + * { color: white;
   margin-left: 8px;
 }
-footer button {
+footer button { color: white;
   padding: 4px;
 }
