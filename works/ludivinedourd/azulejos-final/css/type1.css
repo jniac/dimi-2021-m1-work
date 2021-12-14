@@ -3,13 +3,13 @@
 }
 
 .tile-content.type1 .layer1 {
-  background-color: black;
+  background-color: #fe938c;
   mask-image: url(../assets/star-8.svg);
   -webkit-mask-image: url(../assets/star-8.svg);
 }
 
 .tile-content.type1 .layer2 {
-  background-color: #666;
+  background-color: #4281a4;
   mask-image: url(../assets/star-8-stroke.svg);
   -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
