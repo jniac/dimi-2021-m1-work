@@ -5,7 +5,7 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-let x = 64
+let x = 38
 let y = 64
 let orientation = RIGHT
 
