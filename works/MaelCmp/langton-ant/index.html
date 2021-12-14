@@ -12,11 +12,24 @@
     <canvas></canvas>
 
     <footer>
-      <button id="update">Update</button>
-      <button id="play-pause">Play / Pause</button>
-      <input id="speed" type="range" value="1" min="1" max="64">
-      <span id="frame">#0</span>
+      <button id="update" class="fill">Update</button>
+      <button id="play-pause" class="fill">Play / Pause</button>
+      
+      <div>
+        <input id="speed" type="range" value="1" min="1" max="128" 
+        onChange="rangeSlide(this.value)">
+        
+        <span id="rangeValue">1</span>
+      </div>
+      
+      <span id="frame">0</span>
     </footer>
+
+    <script type="text/javascript">
+      function rangeSlide(value){
+        document.getElementById('rangeValue').innerHTML = value;
+      }
+    </script>
 
     <script src="js/main.js" type="module"></script>
   </body>

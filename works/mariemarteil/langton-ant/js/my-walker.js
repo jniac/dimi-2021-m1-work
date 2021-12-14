@@ -7,7 +7,7 @@ const UP = 3
 
 let colorIndex = 0
 const getColor = () => {
-  const colors = ['#b92e15', '#6c9a8b', '#e8998d']
+  const colors = ['#b92e15', '#6c9a8b', '#e8998d', '#eed2cc', '#fbf7f4']
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
@@ -46,7 +46,7 @@ const move = () => {
   setPixel(x, y, color)
   color = getColor()
 
-  const shouldChange = Math.random() < 0.1
+  const shouldChange = Math.random() < 0.7
   if (shouldChange) {
     orientation = Math.floor(Math.random() * 4)
   }

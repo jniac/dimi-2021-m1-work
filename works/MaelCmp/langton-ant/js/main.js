@@ -1,9 +1,11 @@
 import { resizeCanvas } from '../../../common/canvas.js'
 import * as ant from './langton-ant.js'
+import * as walkerAnt from './my-walker.js'
+import * as drunkerAnt from './drunken-walker.js'
 
-resizeCanvas(128, 128)
+resizeCanvas(256, 128)
 
-ant.setPosition(128 / 2, 128 / 2)
+ant.setPosition(256 / 2, 128 / 2)
 
 let paused = true
 let speed = 1
@@ -12,9 +14,11 @@ let frame = 0
 const update = () => {
   for (let i = 0; i < speed; i++) {
     ant.move()
+    walkerAnt.move()
+    drunkerAnt.move()
     frame += 1
   }
-  document.querySelector('#frame').innerHTML = `#${frame.toString().padStart(5, '0')}@x${speed}`
+  document.querySelector('#frame').innerHTML = `${frame.toString().padStart(1, '0')} x ${speed}`
 }
 
 const loop = () => {
