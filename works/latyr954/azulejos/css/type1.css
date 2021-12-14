@@ -1,5 +1,5 @@
 .tile-content.type1 {
-    background-color: blanchedalmond;
+    background-color: #006dd5;
 }
 
 .tile-content.type1 .layer1 {
@@ -9,7 +9,7 @@
 }
 
 .tile-content.type1 .layer2 {
-    background-color: rgb(241, 238, 238);
+    background-color: rgb(247, 15, 15);
     mask-image: url(../assets/4-squares.svg);
     -webkit-mask-image: url(../assets/4-squares.svg);
     transform: scale(50%);
@@ -17,7 +17,7 @@
 
 .tile-content.type1 .layer3 {
     background-color: rgb(245, 243, 243);
-    mask-image: url(../assets/luffy.svg);
-    -webkit-mask-image: url(../assets/luffy.svg);
+    mask-image: url(../assets/Ballon.svg);
+    -webkit-mask-image: url(../assets/Ballon.svg);
 }
 
