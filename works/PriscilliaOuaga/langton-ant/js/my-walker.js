@@ -10,7 +10,7 @@ const getColor = () => {
   const colors = ['pink', 'yellow', 'grey']
     const color = colors[colorIndex]
     colorIndex = colorIndex + 1
-    if (colorIndex >= colors.lenght) {
+    if (colorIndex >= colors.length) {
       colorIndex = 0
     }
   return color 
