@@ -4,14 +4,14 @@
 
 .tile-content.type1 .layer1 {
     background-color: rgb(247, 243, 243);
-    mask-image: url(../assets/star-8.svg);
-    -webkit-mask-image: url(../assets/star-8.svg);
+    mask-image: url(../assets/Ballon.svg);
+    -webkit-mask-image: url(../assets/ballon.svg);
 }
 
 .tile-content.type1 .layer2 {
     background-color: rgb(247, 15, 15);
-    mask-image: url(../assets/4-squares.svg);
-    -webkit-mask-image: url(../assets/4-squares.svg);
+    mask-image: url(../assets/Ballon.svg);
+    -webkit-mask-image: url(../assets/4-ballon.svg);
     transform: scale(50%);
 }
 
