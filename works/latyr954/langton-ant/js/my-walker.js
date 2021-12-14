@@ -17,7 +17,7 @@ const getColor = () => {
   return color
 }
 
-let x = 20
+let x = 64
 let y = 64
 let orientation = RIGHT
 let color = getColor()
