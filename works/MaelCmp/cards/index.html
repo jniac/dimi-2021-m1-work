@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cards</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<h1>Voici les cartes</h1>
+	
+	<div class="card" onclick="cloneOnClick(event)">
+    <div>
+      <div>
+        👾
+        <i class="fa fa-trash-o" id="trash" style="font-size:28px" onclick="destroyCard(event)"></i>
+      </div>		
+    </div>
+	</div>
+
+	<script src="main.js"></script>
+	
+</body>
+</html>

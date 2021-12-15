@@ -1,56 +1,62 @@
-@import url("type1.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url(type1.css);
+@import url(type2.css);
+@import url(tile.css);
+@import url(footer.css);
 
 body, body * {
-    margin: 0;
-    box-sizing: border-box;
-    position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
 body {
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;    
+  --tile-size: 150px;
+  --grid-col: 4;
+  --grid-row: 3;
+  background: linear-gradient(148deg, rgba(200,11,209,1) 0%, rgba(0,165,199,1) 100%);
 }
 
-html {
-    --tile-size: 180px;
-    --grid-col: 4;
-    --grid-row: 3;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+  background-color: #ddd;
+  min-height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-main#grid {
-    border: solid 3px #222;
-    width: calc(var(--grid-col) * var(--tile-size));
-    height: calc(var(--grid-row) * var(--tile-size));
-    box-sizing: content-box;
+h1{
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #00e8ff;
+  color: #fff;
 }
 
-div.tile {
-    position: absolute;
-    width: var(--tile-size);
-    height: var(--tile-size);
-  }
+#grid {
+  width: calc(var(--grid-col) * var(--tile-size));
+  height: calc(var(--grid-row) * var(--tile-size));
+  border: solid #310a40 15px;
+  box-sizing: content-box;
+  border-radius: 2%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
-div.tile-content {
-    width: var(--tile-size);
-    height: var(--tile-size);
-    background-color: #fff;
-  }
-
-div.tile-content > * {
+#library {
   position: absolute;
-  top : 0;
-  left : 0;
-  width: 100%;
-  height: 100%;
+  /* z-index: forcer la div à s'afficher au premier plan */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  filter: saturate(0);
+}
+#library:hover {
+  filter: none;
 }
 
-div#library {
-    position: absolute;
-    /* z-index: forcer la div à s'afficher au premier plan */
-    z-index: 1;
-    top: 0;
-    left: 0;
-  }
