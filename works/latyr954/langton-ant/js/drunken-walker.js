@@ -5,8 +5,8 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-let x = 20
-let y = 20
+let x = 38
+let y = 64
 let orientation = RIGHT
 
 const moveForward = () => {
