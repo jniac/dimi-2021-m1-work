@@ -61,8 +61,8 @@ footer button:hover {
   font-family: "minecraft" ;
   letter-spacing:  2px;
   outline: solid 0.15em #000;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
