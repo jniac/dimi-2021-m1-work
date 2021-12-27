@@ -12,7 +12,7 @@ const getRandomColor = () => {
   if (Math.random() < 0.5) {
     return '#953ABC'
   }
-  return '#orange'
+  return 'orange'
 }
 let x = 20
 let y = 20
