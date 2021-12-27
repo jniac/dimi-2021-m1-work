@@ -14,6 +14,7 @@ h1{
   color: #D73700;
   font-family: "minecraft" ;
   letter-spacing: 2px;
+  font-size: 3em;
 }
 
 p{
@@ -39,6 +40,9 @@ footer {
 
 footer > * + * {
   margin-left: 8px;
+  color: white;
+  font-family: minecraft;
+  letter-spacing: 2px;
 }
 
 footer button {
@@ -65,4 +69,8 @@ footer button:hover {
   padding-left: 13px;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+#speed{
+  color:tomato;
 }
