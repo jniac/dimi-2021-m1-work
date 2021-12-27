@@ -10,9 +10,9 @@ const getRandomColor = () => {
     return 'blue'
   }
   if (Math.random() < 0.5) {
-    return 'pink'
+    return 'purple'
   }
-  return 'yellow'
+  return 'dark pink'
 }
 let x = 20
 let y = 20
