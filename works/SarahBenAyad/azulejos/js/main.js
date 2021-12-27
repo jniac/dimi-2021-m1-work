@@ -23,6 +23,7 @@ const createType1 = () => {
   clone.querySelector('.layer1').style.backgroundColor = getRandomColor()
   clone.querySelector('.layer2').style.backgroundColor = getRandomColor()
   clone.querySelector('.layer3').style.backgroundColor = getRandomColor()
+  clone.querySelector('.layer4').style.backgroundColor = getRandomColor()
   return clone
 }
 
@@ -46,5 +47,5 @@ const createGrid = (col, row) => {
   }
 }
 
-createGrid(4, 3)
+createGrid(5, 3)
 
