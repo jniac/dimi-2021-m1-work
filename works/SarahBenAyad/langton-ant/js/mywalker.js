@@ -7,14 +7,13 @@ const UP = 3
 
 const getRandomColor = () => {
   if (Math.random() < 0.25) {
-    return 'pink'
+    return 'blue'
   }
   if (Math.random() < 0.5) {
     return 'pink'
   }
-  return 'pink'
+  return 'yellow'
 }
-
 let x = 20
 let y = 20
 let orientation = RIGHT
@@ -43,10 +42,11 @@ const moveForward = () => {
 
 const move = () => {
   setPixel(x, y, color)
+  color = getRandomColor()
 
   const shouldChange = Math.random() < 0.1
   if (shouldChange) {
-    color = getRandomColor()
+   // color = getRandomColor()
     orientation = Math.floor(Math.random() * 4)
   }
 
