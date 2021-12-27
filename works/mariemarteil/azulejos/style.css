@@ -14,14 +14,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center ;
-  background-color: #ccc;
+  background-color: rgb(238, 210, 204);
   min-height: 100vh;
 }
 
 main#grid {
   width: calc(var(--grid-col) * var(--tile-size));
   height: calc(var(--grid-row) * var(--tile-size));
-  border: solid red 40px;
+  border: solid rgb(238, 210, 204)ed 40px;
   box-sizing: content-box;
 }
 
