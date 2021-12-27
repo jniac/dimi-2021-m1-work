@@ -41,4 +41,9 @@ footer > * + * {
 }
 footer button {
   padding: 4px;
+  color:black;
+  background-color: #ECD21A;
+  font-family: "minecraft" ;
+  letter-spacing:  2px;
+  outline: solid 0.25em #000;
 }
