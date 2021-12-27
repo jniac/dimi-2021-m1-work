@@ -13,11 +13,13 @@ body {
 h1{
   color: #D73700;
   font-family: "minecraft" ;
+  letter-spacing: 2px;
 }
 
 p{
   color:white;
   font-family: "minecraft" ;
+  letter-spacing:  2px;
 }
 
 header {
