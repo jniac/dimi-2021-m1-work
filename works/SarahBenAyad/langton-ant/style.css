@@ -1,5 +1,10 @@
 @import url(../../common/style.css);
 
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft") format("truetype");
+ }
+
 body {
   padding: 64px;
   background-color: #393939;
@@ -7,6 +12,7 @@ body {
 
 h1{
   color:white;
+  font-family: "minecraft" ;
 }
 
 p{
