@@ -2,6 +2,15 @@
 
 body {
   padding: 64px;
+  background-color: #393939;
+}
+
+h1{
+  color:white;
+}
+
+p{
+  color:white;
 }
 
 header {
