@@ -97,9 +97,13 @@ img{
 
 #speed::-webkit-slider-thumb{
   -webkit-appearance: none;
-  background: #ECD21A;
+  background-color: #ECD21A;
   outline: solid 3px black;
   width: 20px;
   height: 20px;
   border-radius: 10px;
+}
+
+#speed::-webkit-slider-thumb :active{
+  background-color: #C1AC19;
 }
