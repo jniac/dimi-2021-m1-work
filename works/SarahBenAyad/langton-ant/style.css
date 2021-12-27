@@ -71,6 +71,16 @@ footer button:hover {
   padding-bottom: 7px;
 }
 
+.mur{
+  width:300px;
+  height:auto;
+}
+
+#horizontal{
+  display:flex
+  flex-direction: row;
+}
+
 #speed{
   color:tomato;
 }
