@@ -32,7 +32,7 @@ const setPosition = (positionX, positionY) => {
 
 const getRandomColor = () => {
   if (Math.random() < 0.5) {
-    return 'goldenrod'
+    return '1AA877'
   }
   return 'red'
 }
