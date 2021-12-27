@@ -72,8 +72,13 @@ footer button:hover {
 }
 
 img{
-  width:300px;
+  width:200px;
   height:auto;
+}
+
+#flex-row-center{
+  display: flex;
+  flex-direction: row;
 }
 
 #horizontal{
