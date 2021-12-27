@@ -11,7 +11,7 @@ body {
 }
 
 h1{
-  color: #D73700;
+  color:#ECD21A;
   font-family: "minecraft" ;
   letter-spacing: 2px;
   font-size: 3em;
@@ -76,8 +76,9 @@ footer button:hover {
 }
 
 img{
-  width:200px;
+  width:250px;
   height:auto;
+  margin:70px;
 }
 
 #flex-row-center{
