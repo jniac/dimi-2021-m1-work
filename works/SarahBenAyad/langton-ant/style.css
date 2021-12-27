@@ -104,6 +104,6 @@ img{
   border-radius: 10px;
 }
 
-#speed::-webkit-slider-thumb :active{
+#speed :active{
   background-color: #C1AC19;
 }
