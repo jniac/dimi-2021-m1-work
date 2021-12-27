@@ -11,12 +11,13 @@ body {
 }
 
 h1{
-  color:white;
+  color: #D73700;
   font-family: "minecraft" ;
 }
 
 p{
   color:white;
+  font-family: "minecraft" ;
 }
 
 header {
