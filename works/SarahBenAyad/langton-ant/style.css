@@ -88,5 +88,19 @@ img{
 }
 
 #speed{
-  color:tomato;
+  -webkit-appearance: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #D73700;
+    outline: solid 3px black;
+    margin: 13px;
+}
+
+#speed::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: #ECD21A;
+  outline: solid 3px black;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
 }
