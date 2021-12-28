@@ -23,5 +23,6 @@ export const createType1 = () => {
   clone.querySelector('.layer1').style.backgroundColor = color2
   clone.querySelector('.layer2').style.backgroundColor = color3
   clone.querySelector('.layer3').style.backgroundColor = color4
+  clone.querySelector('.layer4').style.backgroundColor = color4
   return clone
 }

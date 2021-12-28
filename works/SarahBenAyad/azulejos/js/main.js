@@ -175,7 +175,7 @@ const gridOnClick = async (playableTiles) => {
 
 const win = async () => {
   await wait(1)
-  alert('yeah!')
+  alert(' ✨BRAVO! Vous avez gagné !✨')
 }
 
 const main = async () => {
