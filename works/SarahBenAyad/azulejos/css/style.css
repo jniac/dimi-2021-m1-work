@@ -37,6 +37,7 @@ h1{
   font-size: 56px;
   margin-bottom: 20px;
   text-shadow: 4px 2px 5px #236b8c;
+  font-family: "lemon milk";
 }
 
 p{
@@ -93,7 +94,7 @@ button{
     margin-left: 10px;
     font-family: "lemon milk";
     color: #092864;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
 }
 
 button:hover{
