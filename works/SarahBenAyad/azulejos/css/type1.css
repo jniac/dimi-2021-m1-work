@@ -5,7 +5,7 @@
 .tile-content.type1 .layer1 {
   background-color: black;
   mask-image: url(../assets/1blanc_Plan\ de\ travail\ 1.svg);
-  -webkit-mask-image: url(./assets/1blanc_Plan\ de\ travail\ 1.svg);
+  -webkit-mask-image: url(../assets/1blanc_Plan\ de\ travail\ 1.svg);
 }
 
 .tile-content.type1 .layer2 {
@@ -20,8 +20,8 @@
   -webkit-mask-image: url(../assets/3moyen_Plan\ de\ travail\ 1.svg);
 }
 
-.tile-content.type1 .layer4 {
+/* .tile-content.type1 .layer4 {
   background-color: rgb(216, 216, 216);
   mask-image: url(../assets/4fonce_Plan\ de\ travail\ 1.svg);
   -webkit-mask-image: url(../assets/4fonce_Plan\ de\ travail\ 1.svg);
-}
+} */
