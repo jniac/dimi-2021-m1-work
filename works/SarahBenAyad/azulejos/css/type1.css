@@ -4,20 +4,20 @@
 
 .tile-content.type1 .layer1 {
   background-color: black;
-  mask-image: url(../assets/1blanc_Plan\ de\ travail\ 1.svg);
-  -webkit-mask-image: url(../assets/1blanc_Plan\ de\ travail\ 1.svg);
+  mask-image: url(../assets/star-8.svg);
+  -webkit-mask-image: url(../assets/star-8.svg);
 }
 
 .tile-content.type1 .layer2 {
   background-color: #666;
-  mask-image: url(../assets/2clair_Plan\ de\ travail\ 1.svg);
-  -webkit-mask-image: url(../assets/2clair_Plan\ de\ travail\ 1.svg);
+  mask-image: url(../assets/star-8-stroke.svg);
+  -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
 
 .tile-content.type1 .layer3 {
   background-color: #999;
-  mask-image: url(../assets/3moyen_Plan\ de\ travail\ 1.svg);
-  -webkit-mask-image: url(../assets/3moyen_Plan\ de\ travail\ 1.svg);
+  mask-image: url(../assets/4-squares.svg);
+  -webkit-mask-image: url(../assets/4-squares.svg);
 }
 
 /* .tile-content.type1 .layer4 {

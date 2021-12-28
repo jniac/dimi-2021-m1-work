@@ -19,9 +19,9 @@ body, body * {
 
 }
 
-html {
+body {
   --tile-size: 120px;
-  --grid-col: 5;
+  --grid-col: 4;
   --grid-row: 3;
 }
 
@@ -61,13 +61,13 @@ h1{
   position: absolute;
   width: var(--tile-size);
   height: var(--tile-size);
-}
+} */
 
-div.tile-content {
+/* div.tile-content {
   width: var(--tile-size);
   height: var(--tile-size);
   background-color: white;
-}
+} */
 
 /* tous les enfants de "tite-content", càd les calques... */
 /* div.tile-content > * {
