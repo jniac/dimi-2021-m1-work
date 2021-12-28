@@ -141,3 +141,18 @@ input{
 footer{
   margin-top:15px;
 }
+
+
+
+
+#library {
+  position: absolute;
+  /* z-index: forcer la div à s'afficher au premier plan */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  filter: saturate(0);
+}
+#library:hover {
+  filter: none;
+}
