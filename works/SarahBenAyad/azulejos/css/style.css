@@ -1,5 +1,12 @@
 @import url(type1.css);
 
+
+@import url(type2.css);
+@import url(tile.css);
+@import url(footer.css);
+
+
+
 @font-face {
   font-family: "Lemon milk";
   src: url("../fonts/LEMONMILK-Medium.otf") format("otf");
