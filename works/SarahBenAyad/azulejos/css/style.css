@@ -88,11 +88,24 @@ button{
     border: none;
     width: 140px;
     padding: 15px;
-    font-family: Lemon milk;
-    font-size: 18px;
+    font-size: 15px;
     font-family: fantasy;
     margin-left: 10px;
+    font-family: "lemon milk";
+    color: #092864;
+}
 
+button:hover{
+  color: white;
+  border-radius: 10px;
+  border: none;
+  width: 140px;
+  padding: 15px;
+  font-size: 15px;
+  font-family: fantasy;
+  margin-left: 10px;
+  font-family: "lemon milk";
+  background-color: #092864;
 }
 
 footer{
