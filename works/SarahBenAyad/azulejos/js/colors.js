@@ -4,17 +4,17 @@ export const getRandomColor = () => {
   const r = Random.random()
   if (r < 0.5) {
     if (Random.chance(0.5)) {
-      return '#b92e15'
+      return '#0C3688'
     }
-    return 'tomato'
+    return '#3A6AC6'
   }
   if (r < 0.7) {
-    return '#df5eef'
+    return '#5FA8ED'
   }
   if (r < 0.9) {
-    return '#06069f'
+    return '#A3D5FA'
   }
-  return '#5bacff'
+  return '#ffffff'
 }
 
 export const getRandomColorIncludingWhite = (whiteProbability = .2) => {
