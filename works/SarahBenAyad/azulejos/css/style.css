@@ -54,37 +54,7 @@ h1{
   border-radius: 10px;
 }
 
-/* div.tile {
-  position: absolute;
-  width: var(--tile-size);
-  height: var(--tile-size);
-} */
 
-/* div.tile-content {
-  width: var(--tile-size);
-  height: var(--tile-size);
-  background-color: white;
-} */
-
-/* tous les enfants de "tite-content", càd les calques... */
-/* div.tile-content > * {
-  /* ...doivent se comporter comme des calques dans photoshop ou illustrator */
-  /* c'est à dire, qu'ils doivent faire la même taille que leur parent et se superposer les uns sur les autres. */
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
-
-/* div */
-/* #library {
-  position: absolute;
-  /* z-index: forcer la div à s'afficher au premier plan */
-  /* z-index: 1;
-  top: 0;
-  left: 0;
-} */
 
 button{
     background-color: white;
@@ -113,6 +83,7 @@ button:hover{
   font-family: "lemon milk";
   background-color: #092864;
   border-color:#092864;
+  cursor: pointer;
 }
 
 span{
@@ -151,3 +122,35 @@ footer{
 #library:hover {
   filter: none;
 }
+
+/* div.tile {
+  position: absolute;
+  width: var(--tile-size);
+  height: var(--tile-size);
+} */
+
+/* div.tile-content {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  background-color: white;
+} */
+
+/* tous les enfants de "tite-content", càd les calques... */
+/* div.tile-content > * {
+  /* ...doivent se comporter comme des calques dans photoshop ou illustrator */
+  /* c'est à dire, qu'ils doivent faire la même taille que leur parent et se superposer les uns sur les autres. */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+/* div */
+/* #library {
+  position: absolute;
+  /* z-index: forcer la div à s'afficher au premier plan */
+  /* z-index: 1;
+  top: 0;
+  left: 0;
+} */
