@@ -126,6 +126,8 @@ input{
   font-family: "lemon milk";
   font-size: 15px;
   margin-left: 5px;
+  text-align: center;
+  width: 110px;
 }
 
 footer{
