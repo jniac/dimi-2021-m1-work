@@ -118,6 +118,16 @@ span{
   font-size:15px;
 }
 
+input{
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  color: #236b8c;
+  font-family: "lemon milk";
+  font-size: 15px;
+  margin-left: 5px;
+}
+
 footer{
   margin-top:15px;
 }
