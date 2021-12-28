@@ -112,6 +112,12 @@ button:hover{
   border-color:#092864;
 }
 
+span{
+  font-family: "lemon milk";
+  color: #092864;
+  font-size:15px;
+}
+
 footer{
   margin-top:15px;
 }
