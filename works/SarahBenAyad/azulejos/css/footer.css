@@ -2,6 +2,7 @@
   padding: 16px;
   font-size: 11px;
 }
+
 footer input,
 footer button {
   appearance: none;
@@ -11,10 +12,13 @@ footer button {
   border-radius: 3px;
   text-align: center;
 }
+
 footer input.freezed {
   font-style: italic;
   background-color: #fff6;
-}
+} */
+
+
 footer button.hidden {
   display: none;
-} */
+}
