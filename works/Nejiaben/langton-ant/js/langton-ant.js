@@ -12,9 +12,9 @@ let orientation = RIGHT
 const moveForward = () => {
   if (orientation === RIGHT) {
     x = x + 1
-  } else if (orientation === BOTTOM) {
-    y = y + 1
   } else if (orientation === LEFT) {
+    y = y + 1
+  } else if (orientation === BOTTOM) {
     x = x - 1
   } else if (orientation === UP) {
     y = y - 1
