@@ -1,31 +1,51 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azulejos</title>
-    <link rel="stylesheet" href="css/style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azulejos</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div id="library">
-        <div class="tile-content type1">
-            <div class="layer1"></div>
-            <div class="layer2"></div>
-            <div class="layer3"></div>
-        </div>
+  <header>
+    <h1>Azulejos</h1>
+  </header>
+  
+  <div id="library">
+
+    <div class="tile-content type1">
+      <div class="layer layer1"></div>
+      <div class="layer layer2"></div>
+      <div class="layer layer3"></div>
     </div>
 
-    <main id="grid">
-<!-- 
-    voici à quoi doivent ressembler les divs produites en js :
-    <div class="tile">
-      <div class="content"></div>
-    </div>
- -->
-    </main>
+    <div class="tile-content type2">
+      <div class="middle t">O</div>
+      <div class="middle r">O</div>
+      <div class="middle b">O</div>
+      <div class="middle l">O</div>
 
-    <script src="js/main.js" type="module"></script>
+      <div class="corner tl">D</div>
+      <div class="corner tr">D</div>
+      <div class="corner bl">D</div>
+      <div class="corner br">D</div>
+    </div>
+
+    <div class="tile-content type3"></div>
+
+  </div>
+
+  <main id="grid"></main>
+
+  <footer>
+    <span>
+      seed: <input type="number">
+    </span>
+    <button class="btn" id="freeze">freeze</button>
+    <button class="btn" id="random">random</button>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>

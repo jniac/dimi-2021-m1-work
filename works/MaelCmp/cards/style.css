@@ -1,0 +1,178 @@
+/***********************************************/
+/** Import de la police de caractère : Roboto **/
+/***********************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+/*************************************************************/
+/****************** Mise en page principale ******************/
+/*************************************************************/
+body, body * {
+	margin: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+	
+body {
+	/* Font */
+	color: white;
+	font-family: 'Roboto', serif;
+
+	/* background */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+
+	/* aligne les éléments au milieu */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/* empêche de pouvoir scroller */
+	overflow: hidden;
+}
+
+
+/*************/
+/*** Titre ***/
+/*************/
+h1{
+	margin: 0 0 25% 0;
+	font-size: 50px;
+}
+
+
+/**************************************/
+/********** Style des cartes **********/
+/**************************************/
+div.card {
+	position: absolute;
+}
+
+/* div => animation rotation */	
+div.card > div {
+	transition: all 0.2s ease-out;
+}
+	
+/* paramètres des cartes */	
+div.card > div > div {
+	width: 200px;
+	height: 200px;
+	font-size: 70px;
+	border-radius: 20px;
+	background-color: rgb(114, 39, 129);
+
+	/* centrer le contenu */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* ombre portée */
+	box-shadow: #0000008a 11px 10px 11px;
+
+	/* enlève l'affichage sur image */
+	user-select: none;
+
+	/* modifie le curseur en main */
+	cursor: pointer;
+
+	/* animation : rotation de la carte*/
+	transition: transform 0.2s ease-in;
+
+	/* animation : changement de couleur carte UR*/
+	animation: gradient ease infinite;
+}
+
+
+/********************************/
+/** Style au survol des cartes **/
+/********************************/
+
+/* agrandi la carte au survol de 15% */
+div.card > div:hover {
+	transform: scale(1.15);
+}
+
+/* fais tourner la carte au survol*/
+div.card > div > div:hover {
+	transform: rotate(15deg);
+}
+
+
+/*****************************************/
+/*********** Variété de cartes ***********/
+/*****************************************/
+
+/* Ultra Rare => UR */
+div.card.ur > div > div{
+	animation-duration: 4s;
+	animation-name: carteUR;
+	border: solid 3px #900000;
+	border-radius: 20px;
+	background-size: 300% 300%;
+}
+
+/* Gold */
+div.card.gold > div > div{
+	background: goldenrod;
+	border: solid 2px rgb(255, 255, 0);
+}
+
+/* Silver */
+div.card.silver > div > div{
+	background: rgb(73, 73, 73);
+	border: solid 2px rgb(146, 146, 146);
+}
+
+
+/***********************/
+/* Logo de suppression */
+/***********************/
+div.card > div > div > i {
+	color: white;
+	font-size: 12px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+
+/*********************************/
+/*** Paramètres des animations ***/
+/*********************************/
+
+/* animation du background */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* animation carte UR */
+@keyframes carteUR{
+	0%{
+		background: #3ea776;
+	}
+	20%{
+		background: #125d5f;
+	}
+	40%{
+		background: #397bb9;
+	}
+	60%{
+		background: #612699;
+	}
+	80%{
+		background: #bd40a8;
+	}
+	100%{
+		background: #68a73e;
+	}
+}

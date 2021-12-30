@@ -7,18 +7,32 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
-  <h1>À toi de jouer !</h1>
 
-<p>Séléctionne les cartes similaires.</p>
+  <h1>Azulejos</h1>
 
   <div id="library">
 
     <div class="tile-content type1">
-      <div class="layer1"></div>
-      <div class="layer2"></div>
-      <div class="layer3"></div>
+      <div class="layer layer1"></div>
+      <div class="layer layer2"></div>
+      <div class="layer layer3"></div>
+      <div class="layer layer4"></div>
     </div>
+
+    <div class="tile-content type2">
+      <div class="middle t">T</div>
+      <div class="middle r">T</div>
+      <div class="middle b">T</div>
+      <div class="middle l">T</div>
+
+      <div class="corner tl">K</div>
+      <div class="corner tr">K</div>
+      <div class="corner bl">K</div>
+      <div class="corner br">K</div>
+    </div>
+
+    <div class="tile-content type3"></div>
+
 
   </div>
 
@@ -30,6 +44,16 @@
     </div>
  -->
    </main>
+
+   <footer>
+    <span>
+      seed: <input type="number">
+    </span>
+    <button id="freeze">Freeze</button>
+    <button id="random">Random</button>
+  </footer>
+
+
 
   <script src="js/main.js" type="module"></script>
 </body>

@@ -1,0 +1,54 @@
+footer {
+  padding: 16px;
+  font-size: 11px;
+}
+footer input,
+footer button {
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  border-radius: 3px;
+  text-align: center;
+}
+footer input.freezed {
+  font-style: italic;
+  background-color: #fff6;
+}
+footer button.hidden {
+  display: none;
+}
+
+.btn {
+  background: #34d93f;
+  background-image: -webkit-linear-gradient(top, #34d93f, #318510);
+  border-radius: 28px;
+  border: 0;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 15px 45px;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.btn:hover {
+  background-image: -webkit-linear-gradient(top, #449420, #147a25);
+  text-decoration: none;
+}
+
+span{
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+input{
+  background: rgb(0 0 0 / 14%);
+  padding: 15px;
+  border-style: none;
+  color: #fff;
+}

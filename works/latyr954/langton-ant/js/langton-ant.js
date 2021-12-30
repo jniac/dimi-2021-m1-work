@@ -5,8 +5,8 @@ const BOTTOM = 1
 const LEFT = 2
 const UP = 3
 
-let x = 20
-let y = 20
+let x = 48
+let y = 64
 let orientation = RIGHT
 
 const moveForward = () => {
@@ -46,12 +46,12 @@ const move = () => {
   // sinon :
   //   tourner à droite ("turnRight()")
   //   et remettre le pixel en blanc ("#ffffff")
-  if (color === '#ffffff') {
+  if (color === '#000000') {
     turnLeft()    
     setPixel(x, y, 'turquoise')
   } else {
     turnRight()
-    setPixel(x, y, '#ffffff')
+    setPixel(x, y, '#000000')
   }
   
   moveForward()

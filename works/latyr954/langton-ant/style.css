@@ -1,26 +1,27 @@
 @import url(../../common/style.css);
 
 body {
-  padding: 64px;
+  background-image: url(galaxy.jpeg);
+  padding: 40px;
 }
 
-header {
+header { color: white;  ;
   text-align: center;
 }
 
-canvas {
-  flex: 1;
-  margin: 32px;
+canvas { color: white;
+  flex: 20px;
+  margin: 50px;
   image-rendering: pixelated;
 }
 
-footer {
+footer { color: white;
   display: flex;
   align-items: center;
 }
-footer > * + * {
-  margin-left: 8px;
+footer > * + * { color: white;
+  margin-left: 16px;
 }
-footer button {
+footer button { color: white;
   padding: 4px;
 }

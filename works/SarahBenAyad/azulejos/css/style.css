@@ -1,12 +1,22 @@
+
 @import url(type1.css);
+@import url(type2.css);
+@import url(tile.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: "Lemon milk";
+  src: url("../fonts/LEMONMILK-Medium.otf") format("otf");
+ }
 
 body, body * {
   margin: 0;
   box-sizing: border-box;
   position: relative;
+
 }
 
-html {
+body {
   --tile-size: 120px;
   --grid-col: 4;
   --grid-row: 3;
@@ -14,55 +24,133 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center ;
-  background-color: #ddd;
   min-height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6)),
+  url("../assets/fond_azulejos.jpg");
+  background-color: lightsteelblue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 h1{
-  color: black;
+  color: #092864;
   text-align: center;
+  font-size: 75px;
+  margin-bottom: 20px;
+  text-shadow: 4px 2px 5px #236b8c;
+  font-family: "cursive";
 }
 
-p{
-  text-align: center;
-}
 
-main#grid {
+#grid {
   width: calc(var(--grid-col) * var(--tile-size));
   height: calc(var(--grid-row) * var(--tile-size));
-  border: solid #eee calc(var(--tile-size) / 2);
+  border: solid #092864 calc(var(--tile-size) / 10);
   box-sizing: content-box;
+  border-radius: 10px;
 }
 
-div.tile {
-  position: absolute;
-  width: var(--tile-size);
-  height: var(--tile-size);
+
+
+button{
+    background-color: white;
+    border-radius: 10px;
+    /* border: none; */
+    width: 140px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: fantasy;
+    margin-left: 10px;
+    font-family: "lemon milk";
+    color: #092864;
+    transition-duration: 0.4s;
+    border-color:#092864;
 }
 
-div.tile-content {
-  width: var(--tile-size);
-  height: var(--tile-size);
-  background-color: white;
+button:hover{
+  color: white;
+  border-radius: 10px;
+  /* border: none; */
+  width: 140px;
+  padding: 15px;
+  font-size: 15px;
+  font-family: fantasy;
+  margin-left: 10px;
+  font-family: "lemon milk";
+  background-color: #092864;
+  border-color:#092864;
+  cursor: pointer;
 }
 
-/* tous les enfants de "tite-content", càd les calques... */
-div.tile-content > * {
-  /* ...doivent se comporter comme des calques dans photoshop ou illustrator */
-  /* c'est à dire, qu'ils doivent faire la même taille que leur parent et se superposer les uns sur les autres. */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+span{
+  font-family: "lemon milk";
+  color: #092864;
+  font-size:15px;
 }
 
-div#library {
+input{
+  border: none;
+  padding: 7px;
+  border-radius: 10px;
+  color: #236b8c;
+  font-family: "lemon milk";
+  font-size: 15px;
+  margin-left: 5px;
+  text-align: center;
+  width: 200px;
+}
+
+footer{
+  margin-top:15px;
+}
+
+
+
+
+#library {
   position: absolute;
   /* z-index: forcer la div à s'afficher au premier plan */
   z-index: 1;
   top: 0;
   left: 0;
+  filter: saturate(0);
 }
+#library:hover {
+  filter: none;
+}
+
+/* div.tile {
+  position: absolute;
+  width: var(--tile-size);
+  height: var(--tile-size);
+} */
+
+/* div.tile-content {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  background-color: white;
+} */
+
+/* tous les enfants de "tite-content", càd les calques... */
+/* div.tile-content > * {
+  /* ...doivent se comporter comme des calques dans photoshop ou illustrator */
+  /* c'est à dire, qu'ils doivent faire la même taille que leur parent et se superposer les uns sur les autres. */
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+/* div */
+/* #library {
+  position: absolute;
+  /* z-index: forcer la div à s'afficher au premier plan */
+  /* z-index: 1;
+  top: 0;
+  left: 0;
+} */

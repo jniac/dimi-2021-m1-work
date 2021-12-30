@@ -1,7 +1,26 @@
 @import url(../../common/style.css);
 
+@font-face {
+  font-family: "Minecraft";
+  src: url("/fonts/Minecraft") format("truetype");
+ }
+
 body {
   padding: 64px;
+  background-color: #393939;
+}
+
+h1{
+  color:#ECD21A;
+  font-family: "minecraft" ;
+  letter-spacing: 2px;
+  font-size: 3em;
+}
+
+p{
+  color:white;
+  font-family: "minecraft" ;
+  letter-spacing:  2px;
 }
 
 header {
@@ -10,17 +29,79 @@ header {
 
 canvas {
   flex: 1;
-  margin: 32px;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top:35px;
+  margin-bottom: 35px;
   image-rendering: pixelated;
+  width: 450px;
+  outline: solid 10px #1d1d1b;
 }
 
 footer {
   display: flex;
   align-items: center;
 }
+
 footer > * + * {
   margin-left: 8px;
+  color: white;
+  font-family: minecraft;
+  letter-spacing: 2px;
 }
+
 footer button {
   padding: 4px;
+  color:black;
+  background-color: #ECD21A;
+  font-family: "minecraft" ;
+  letter-spacing:  2px;
+  outline: solid 0.15em #000;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
+
+footer button:hover {
+  padding: 4px;
+  color:black;
+  background-color: #C1AC19;
+  font-family: "minecraft" ;
+  letter-spacing:  2px;
+  outline: solid 0.15em #000;
+  padding-right: 13px;
+  padding-left: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+img{
+  width:300px;
+  height:auto;
+  margin:70px;
+}
+
+#flex-row-center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#speed{
+  -webkit-appearance: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #D73700;
+    margin: 13px;
+}
+
+#speed::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background-color: #ECD21A;
+  outline: solid 3px black;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
