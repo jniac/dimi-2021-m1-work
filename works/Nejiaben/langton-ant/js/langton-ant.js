@@ -48,7 +48,7 @@ const move = () => {
   //   et remettre le pixel en blanc ("#ffffff")
   if (color === '#ffffff') {
     turnLeft()    
-    setPixel(x, y, '#A1EDF8')
+    setPixel(x, y, '#4009FA')
   } else {
     turnRight()
     setPixel(x, y, '#ffffff')
@@ -68,23 +68,6 @@ export {
   orientation,
   move,
   setPosition,
-
-}const getRandomColor = () => {
-  const r = Math.random()
-  if (r < 0.5) {
-    if (Math.random() < 0.5) {
-      return '#b92e15'
-    }
-    return 'tomato'
-  }
-  if (r < 0.7) {
-    return '#df5eef'
-  }
-  if (r < 0.9) {
-    return '#06069f'
-  }
-  return '#5bacff'
 }
-
 
 
