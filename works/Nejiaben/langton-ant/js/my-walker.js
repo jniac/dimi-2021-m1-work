@@ -8,7 +8,7 @@ const UP = 3
 // solution pour un cycle de couleur :
 let colorIndex = 0
 const getColor = () => {
-  const colors = ['red', 'blue']
+  const colors = ['#FF5733', 'blue']
   const color = colors[colorIndex]
   colorIndex = colorIndex + 1
   if (colorIndex >= colors.length) {
