@@ -57,6 +57,17 @@ const move = () => {
   moveForward()
 }
 
+if (color === '#ffffff') {
+  turnLeft()    
+  setPixel(x, y, '#EC6492')
+} else {
+  turnRight()
+  setPixel(x, y, '#ffffff')
+}
+
+moveForward()
+}
+
 const setPosition = (positionX, positionY) => {
   x = positionX
   y = positionY
