@@ -1,12 +1,19 @@
 @import url(../../common/style.css);
 
 body {
-  padding: 64px;
+  padding: 70px;
   background-color: aqua; 
 }
 
 header {
   text-align: center;
+  @font-face {
+    font-family: Faune;
+    src: url(fonts/woff2/Faune-Display_Thin.woff2) format("woff2"), /*  <--- une virgule */ 
+         url(fonts/woff/Faune-Display_Thin.woff) format("woff"); /* <--- un point virgule */
+    font-weight: 100; /* ultra-light */
+    font-style: normal
+  }
 }
 
 canvas {
