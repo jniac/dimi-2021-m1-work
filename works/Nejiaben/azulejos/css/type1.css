@@ -1,21 +1,21 @@
 .tile-content.type1 {
-  background-color: #ccc;
+  background-color: rgb(15, 216, 132);
 }
 
 .tile-content.type1 .layer1 {
-  background-color: black;
+  background-color: rgb(124, 202, 176);
   mask-image: url(../assets/star-8.svg);
   -webkit-mask-image: url(../assets/star-8.svg);
 }
 
 .tile-content.type1 .layer2 {
-  background-color: #666;
+  background-color: rgb(44, 5, 116);
   mask-image: url(../assets/star-8-stroke.svg);
   -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
 
 .tile-content.type1 .layer3 {
-  background-color: #999;
+  background-color: rgb(136, 128, 207);
   mask-image: url(../assets/4-squares.svg);
   -webkit-mask-image: url(../assets/4-squares.svg);
   transform: scale(.5);
