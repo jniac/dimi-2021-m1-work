@@ -1,5 +1,6 @@
 import { getPixel, setPixel } from '../../../common/canvas.js'
 
+
 const RIGHT = 0
 const BOTTOM = 1
 const LEFT = 2
@@ -48,14 +49,11 @@ const move = () => {
   //   et remettre le pixel en blanc ("#ffffff")
   if (color === '#ffffff') {
     turnLeft()    
-    setPixel(x, y, 'darkslateblue')
+    setPixel(x, y, '#19AD01')
   } else {
     turnRight()
-    setPixel(x, y, '#191970')
+    setPixel(x, y, '#ffffff')
   }
-
-  
-}
   
   moveForward()
 }
