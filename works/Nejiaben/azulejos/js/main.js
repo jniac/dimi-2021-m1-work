@@ -1,3 +1,4 @@
+
 const getRandomColor = () => {
   const r = Math.random()
   if (r < 0.5) {
