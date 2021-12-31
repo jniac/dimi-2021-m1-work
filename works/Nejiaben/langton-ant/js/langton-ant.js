@@ -69,17 +69,22 @@ export {
   move,
   setPosition,
 
+}const getRandomColor = () => {
+  const r = Math.random()
+  if (r < 0.5) {
+    if (Math.random() < 0.5) {
+      return '#b92e15'
+    }
+    return 'tomato'
+  }
+  if (r < 0.7) {
+    return '#df5eef'
+  }
+  if (r < 0.9) {
+    return '#06069f'
+  }
+  return '#5bacff'
 }
 
-let colorIndex = 0
-const getColor = () => {
-  const colors = ['black', 'white']
-  const color = colors[colorIndex]
-  colorIndex = colorIndex + 1
-  if (colorIndex >= colors.length) {
-    colorIndex = 0
-  }
-  return color
-}
 
 
