@@ -71,5 +71,15 @@ export {
 
 }
 
+let colorIndex = 0
+const getColor = () => {
+  const colors = ['black', 'white']
+  const color = colors[colorIndex]
+  colorIndex = colorIndex + 1
+  if (colorIndex >= colors.length) {
+    colorIndex = 0
+  }
+  return color
+}
 
 
