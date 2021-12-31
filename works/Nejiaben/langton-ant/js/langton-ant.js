@@ -70,13 +70,6 @@ export {
   setPosition,
 
 }
-const move = () => {
-  setPixel(x, y, color)
-  color = getColor()
 
-  const shouldChange = Math.random() < 0.1
-  if (shouldChange) {
-    orientation = Math.floor(Math.random() * 4)
-  }
 
 
