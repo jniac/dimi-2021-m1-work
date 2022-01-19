@@ -1,21 +1,21 @@
-.tilecontent.type1 {
-  background-color: rgb(60, 1, 255);
+.tile-content.type1 {
+  background-color: #b7acea;
 }
 
-.tilecontent.type1 .layer1{
-  background-color: black ;
+.tile-content.type1 .layer1 {
+  background-color: #8e8cfe;
   mask-image: url(../assets/star-8.svg);
-  -webkit-mask-image: url(../assets/star-8.svg)
+  -webkit-mask-image: url(../assets/star-8.svg);
 }
 
 .tile-content.type1 .layer2 {
-  background-color: rgb(176, 169, 185);
+  background-color: #cfcae3;
   mask-image: url(../assets/star-8-stroke.svg);
   -webkit-mask-image: url(../assets/star-8-stroke.svg);
 }
 
 .tile-content.type1 .layer3 {
-  background-color: rgb(218, 211, 238);
+  background-color: #999;
   mask-image: url(../assets/4-squares.svg);
   -webkit-mask-image: url(../assets/4-squares.svg);
   transform: scale(.5);
